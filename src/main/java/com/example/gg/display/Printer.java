@@ -36,7 +36,7 @@ public class Printer {
             System.out.println("The choice made is not on the list, please try again:");
             return getAnswer("Choice");
         }
-        if (input.equals("Length") && (answer > 100 || answer <= 0)) {
+        if (input.equals("Length") && (answer >= 100 || answer <= 0)) {
             System.out.println("The choice made is outside of 1 to 100, please try again:");
             return getAnswer("Length");
         }
