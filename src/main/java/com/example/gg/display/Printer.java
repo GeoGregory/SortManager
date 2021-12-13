@@ -14,6 +14,7 @@ public class Printer {
         return getAnswer("Choice");
     }
 
+
     // Asks the user to enter the length they want the array to be and then calls on getAnswer()
     public int getLength() {
         System.out.println("Please enter the length of the array you want to generate from 1 to 100:");
