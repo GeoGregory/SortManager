@@ -13,7 +13,7 @@ public class ArrayGen {
     // Generates an array with the length of the argument provided using the ThreadLocalRandom class,
     // the array will only generate values lower than 999.
     private int[] genArray(int lengthOfArray) {
-        int maxVal = 999;
+        final int maxVal = 999;
         int[] arr = new int[lengthOfArray];
         for (int i = 0; i < lengthOfArray; i++) {
             arr[i] = ThreadLocalRandom.current().nextInt(0, maxVal);
