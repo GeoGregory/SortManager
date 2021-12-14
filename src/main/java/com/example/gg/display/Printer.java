@@ -9,8 +9,8 @@ public class Printer {
     public int getChoice() {
         System.out.println("Please enter the number of the sorter you want to use:");
         System.out.println("1. BubbleSorter");
-        System.out.println("2. MergeSorter");
-        System.out.println("3. BinarySorter");
+        System.out.println("2. BinarySorter");
+        System.out.println("3. MergeSorter");
         return getAnswer("Choice");
     }
 
