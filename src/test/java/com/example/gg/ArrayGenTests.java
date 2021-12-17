@@ -26,8 +26,7 @@ public class ArrayGenTests {
                 Arguments.arguments(1),
                 Arguments.arguments(8),
                 Arguments.arguments(15),
-                Arguments.arguments(66),
-                Arguments.arguments()
+                Arguments.arguments(66)
         );
     }
 }

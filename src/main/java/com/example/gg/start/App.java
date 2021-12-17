@@ -11,5 +11,7 @@ public class App {
      * Initiates the @{@link SorterLoader} to start the program.
      * @param args
      */
-    public static void main(String[] args) {SorterLoader.load();}
+    public static void main(String[] args) {
+        SorterLoader.load();
+    }
 }
