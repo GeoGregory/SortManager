@@ -10,7 +10,6 @@ import java.util.stream.Stream;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-
 public class ArrayGenTests {
 
     ArrayGen arrayGen = new ArrayGen();
@@ -27,7 +26,8 @@ public class ArrayGenTests {
                 Arguments.arguments(1),
                 Arguments.arguments(8),
                 Arguments.arguments(15),
-                Arguments.arguments(66)
+                Arguments.arguments(66),
+                Arguments.arguments()
         );
     }
 }
