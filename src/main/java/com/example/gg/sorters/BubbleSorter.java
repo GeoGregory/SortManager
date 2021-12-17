@@ -2,18 +2,40 @@ package com.example.gg.sorters;
 
 import java.util.Arrays;
 
+/**
+ * This is a class to sort an array with a Bubble sort algorithm, it also returns how long it took.
+ * <p>
+ *     Implements the @{@link Sortable} interface.
+ * </p>
+ */
 public class BubbleSorter implements Sortable {
 
-    // sort() method from Sortable, which calls on private bubbleSort() method
+    private long time;
+
+    /**
+     * Gives the user a message confirming which sorter has been chosen along with what the
+     * array looks like before sorting. Then uses a private method to sort the array.
+     * @param array Input array from @{@link com.example.gg.display.ArrayGen}.
+     * @return Gives back a sorted array.
+     */
     @Override
     public int[] sort(int[] array) {
         System.out.println("Sorting using the Bubble Sorter");
         System.out.println("Before sorting:");
         System.out.println(Arrays.toString(array));
+        time = System.nanoTime();
         return bubbleSort(array);
     }
 
-    // Sorts a given array using a bubbleSort sorting method, returns a sorted array
+    /**
+     * Returns how long the sorter took to sort the algorithm.
+     * @return Gives back the time in nanoseconds that the sorting algorithm took to sort the array.
+     */
+    @Override
+    public long timeTaken() {
+        return System.nanoTime() - time;
+    }
+
     private int[] bubbleSort(int[] sortArr) {
         int n = sortArr.length;
         for (int i = 0; i < n-1; i++)
