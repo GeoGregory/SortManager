@@ -35,7 +35,7 @@ You should include but are not limited to:
 - BinaryTreeSort
 
 ## How it works:
-The program works by asking what sorting method the user wants to use, the choice is then sent to the
+The program is initiated through the app class in the start package, it works by asking what sorting method the user wants to use, the choice is then sent to the
 corresponding sorter, where it is initiated.
 
 The program then asks the user to choose the length of the list of numbers, the user may input any value from 1 to 100,
