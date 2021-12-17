@@ -1,5 +1,6 @@
 package com.example.gg.sorters;
 
+
 /**
  * Node class used by @{@link BinarySorter}.
  */
@@ -8,6 +9,7 @@ public class Node {
     private Node leftChild;
     private Node rightChild;
 
+
     /**
      * Node constructor.
      * @param value value of the node represented by an int.
@@ -15,6 +17,7 @@ public class Node {
     public Node(int value) {
         this.value = value;
     }
+
 
     /**
      * Get the value of a node.
@@ -48,6 +51,7 @@ public class Node {
         return rightChild;
     }
 
+
     /**
      * Sets the child on the right of the current node.
      * @param rightChild requires a node representing the right child.
@@ -55,6 +59,7 @@ public class Node {
     public void setRightChild(Node rightChild) {
         this.rightChild = rightChild;
     }
+
 
     /**
      * A boolean method to check if there is a left child of a known node.

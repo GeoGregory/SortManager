@@ -8,6 +8,7 @@ import java.util.Arrays;
  *     Implements the @{@link Sortable} interface.
  * </p>
  */
+
 public class BinarySorter implements Sortable {
 
     private Node rootNode;
@@ -53,7 +54,6 @@ public class BinarySorter implements Sortable {
      * Populates the Binary tree with the rest of the array.
      * @param elements array from @{@link com.example.gg.display.ArrayGen} minus the first int in the list.
      */
-    // For the length of the argument array, each element is added via the addElement() method
     public void addElements(int[] elements) {
         for (int element: elements) {
             addNodeToTree(rootNode, element);
