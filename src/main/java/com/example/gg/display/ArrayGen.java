@@ -2,17 +2,22 @@ package com.example.gg.display;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+/**
+ * This is a class to generate an array with random integers, the length of the array is set by the user.
+ */
 public class ArrayGen {
 
-    // Calls on the private genArray() with an int as an argument,
-    // which correlates to the length of the array being made
-    public int[] startGen(int number) {
+    /**
+     * Generates an array with the length of the argument provided using the ThreadLocalRandom class,
+     * the array will only generate values lower than 1000.
+     * @param number Input int from @{@link com.example.gg.display.Printer}
+     * @return Gives back an array generated from genArray() with the length defined by the user.
+     */
+    public static int[] startGen(int number) {
         return genArray(number);
     }
 
-    // Generates an array with the length of the argument provided using the ThreadLocalRandom class,
-    // the array will only generate values lower than 999.
-    private int[] genArray(int lengthOfArray) {
+    private static int[] genArray(int lengthOfArray) {
         final int maxVal = 999;
         int[] arr = new int[lengthOfArray];
         for (int i = 0; i < lengthOfArray; i++) {
